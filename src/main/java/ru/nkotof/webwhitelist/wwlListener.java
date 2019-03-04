@@ -16,8 +16,8 @@ public class wwlListener implements Listener {
         Player p = e.getPlayer();
 
         String md5name = main.md5(p.getName());
-        String aparams = WebWhiteList.config.getString("request.url") + "?name=" + p.getName() + "&wmuser=" + main.md5(md5name) + "&key=" + main.md5(p.getName() + main.md5(md5name)) + "&random=0" + WebWhiteList.config.getString("request.more-params");
-        String response = main.getHTML(aparams);
+        String params = WebWhiteList.config.getString("request.url") + "?name=" + p.getName() + "&wmuser=" + main.md5(md5name) + "&key=" + main.md5(p.getName() + main.md5(md5name)) + "&random=0" + WebWhiteList.config.getString("request.more-params");
+        String response = main.getHTML(params);
 
         if(response.equalsIgnoreCase(WebWhiteList.config.getString("request.response"))) {
             getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "Player can join!");
