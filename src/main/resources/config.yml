@@ -1,0 +1,4 @@
+request:
+  url: 'http://localhost/api.php' # can use localhost
+  more-params: '&someparameter=test' # can use if u need to send more parameters (etc. bungeecord server: &server=survival)
+  response: 'ok' # string what your web server must return if data is valid

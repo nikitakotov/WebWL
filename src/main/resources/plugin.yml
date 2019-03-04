@@ -1,0 +1,6 @@
+name: WebWhiteList
+version: ${project.version}
+main: ru.nkotof.webwhitelist.WebWhiteList
+api-version: 1.13
+authors: [nkotof]
+description: Web whitelist system (controls by web server or web admin)
