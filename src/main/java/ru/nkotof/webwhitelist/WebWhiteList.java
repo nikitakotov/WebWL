@@ -16,11 +16,11 @@ public final class WebWhiteList extends JavaPlugin {
         this.getServer().getPluginManager().registerEvents(new wwlListener(), this);
         this.saveDefaultConfig();
 
-        console.sendMessage(ChatColor.GREEN + "WebWhiteList loaded!");
+        console.sendMessage(ChatColor.GREEN + "WebWL loaded!");
     }
 
     @Override
     public void onDisable() {
-        console.sendMessage(ChatColor.GOLD + "WebWhiteList unloaded!");
+        console.sendMessage(ChatColor.GOLD + "WebWL unloaded!");
     }
 }
