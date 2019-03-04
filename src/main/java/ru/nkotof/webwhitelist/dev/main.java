@@ -21,7 +21,7 @@ public class main {
         return null;
     }
 
-    public static String getHTML(String Url) {
+    public static String get(String Url) {
         String line;
         String result = "";
         try {
